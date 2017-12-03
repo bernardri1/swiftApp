@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     
     @IBAction func otherPushed(_ sender: Any) {
         otherPressCount = otherPressCount + 1
-        if(otherPressCount>=10){
+        if(otherPressCount>=20){
             maybeLabel.text = "That too"
         }
     }
