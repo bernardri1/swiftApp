@@ -12,21 +12,12 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var maybeLabel: UILabel!
     
-    var pressCount = 0
-    var otherPressCount = 0
+    @IBOutlet weak var text1: UITextField!
+    
+    @IBOutlet weak var text2: UITextField!
     
     @IBAction func beginPressed(_ sender: Any) {
-        pressCount = pressCount + 1
-        if(pressCount>=10){
-            maybeLabel.text = "Quit pressing that"
-        }
-    }
-    
-    @IBAction func otherPushed(_ sender: Any) {
-        otherPressCount = otherPressCount + 1
-        if(otherPressCount>=20){
-            maybeLabel.text = "That too"
-        }
+        maybeLabel.text = "Answer is \(Double(text1.text!)! + Double(text2.text!)!)"
     }
     
     override func viewDidLoad() {

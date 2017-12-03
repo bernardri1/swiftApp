@@ -31,27 +31,42 @@
                                     <action selector="beginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rTu-VS-tEu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAC-wn-8ey">
-                                <rect key="frame" x="155" y="241" width="65" height="30"/>
-                                <state key="normal" title="Unknown"/>
-                                <connections>
-                                    <action selector="otherPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bHK-mB-1WW"/>
-                                </connections>
-                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P0B-gW-ywR">
+                                <rect key="frame" x="137.5" y="241" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="zDw-55-zZI"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MwJ-4d-PfY">
+                                <rect key="frame" x="137.5" y="301" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="rev-AX-hxH"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="HTe-fn-7LG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="54o-hH-xDv"/>
                             <constraint firstItem="2P1-oA-Tir" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="77C-G5-eLT"/>
-                            <constraint firstItem="EAC-wn-8ey" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LZI-ac-hQJ"/>
+                            <constraint firstItem="P0B-gW-ywR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D5i-QR-6JQ"/>
                             <constraint firstItem="2P1-oA-Tir" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="YVq-pI-Cch"/>
-                            <constraint firstItem="EAC-wn-8ey" firstAttribute="top" secondItem="HTe-fn-7LG" secondAttribute="bottom" constant="20" id="aaD-mp-nyk"/>
+                            <constraint firstItem="MwJ-4d-PfY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="btW-rt-Rze"/>
+                            <constraint firstItem="MwJ-4d-PfY" firstAttribute="top" secondItem="P0B-gW-ywR" secondAttribute="bottom" constant="30" id="qwk-yn-wXm"/>
+                            <constraint firstItem="P0B-gW-ywR" firstAttribute="top" secondItem="HTe-fn-7LG" secondAttribute="bottom" constant="20" id="r8O-1D-raw"/>
                             <constraint firstItem="HTe-fn-7LG" firstAttribute="top" secondItem="2P1-oA-Tir" secondAttribute="bottom" constant="50" id="vRq-IX-Bav"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="maybeLabel" destination="2P1-oA-Tir" id="f7N-yC-9nQ"/>
+                        <outlet property="text1" destination="P0B-gW-ywR" id="kob-xG-Hik"/>
+                        <outlet property="text2" destination="MwJ-4d-PfY" id="FXa-E2-WzC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
